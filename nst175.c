@@ -252,7 +252,7 @@ void nst175_sensor(int argc, char *argv[])
 						val = atoi(argv[3]);
 						nst175_addr = (rt_uint8_t)val;//强制取最低字节数据无符号数
 						
-						if(nst175_addr < NST175_I2CADDR_VPX ||  nst175_addr > NST175_I2CADDR_CPU){
+						if(nst175_addr < NST175_I2CADDR_DEF1 ||  nst175_addr > NST175_I2CADDR_DEF3){
 							rt_kprintf("input nst175_addr is not valid,the valid addr is 72,73,74;please check input args\r\n");
 							return;
 						}
