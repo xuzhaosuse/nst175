@@ -29,10 +29,11 @@ NST175 package 遵循 `LGPLv2.1` 许可，详见 `LICENSE` 文件。
 ```
 RT-Thread online packages
     peripheral libraries and drivers  --->
-        [*] nst175: digital temperature sensor nst175  driver library
+    	sensors drivers  --->
+        	[*] nst175: digital temperature sensor nst175  driver library
 ```
 
-然后让 RT-Thread 的包管理器自动更新，或者使用 `pkgs --update` 命令更新包到 BSP 中。
+然后让 RT-Thread 的包管理器自动更新，或者使用 `pkgs --update` 命令更新包到 BSP 中。执行scons –target=iar/mdk4/mdk5 -s 更新工程
 
 ## 3、使用 nst175
 
